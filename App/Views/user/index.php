@@ -13,6 +13,7 @@
             <th scope="col">Name</th>
             <th scope="col">Address</th>
             <th scope="col">Location</th>
+            <th scope="col">Dept_ID</th>
         </tr>
     </thead>
     <tbody>
@@ -26,6 +27,7 @@
                 <td><?php echo $datum['name']; ?></td>
                 <td><?php echo $datum['address']; ?></td>
                 <td><?php echo $datum['location']; ?></td>
+                <td><?php echo $datum['did']; ?></td>
 
             </tr>
         <?php

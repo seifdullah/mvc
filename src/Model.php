@@ -20,7 +20,7 @@ class Model
         $fields = '';
         $placeholders = '';
         $values = '';
-        
+
         foreach ($data as $key => $value) {
             // print_r($key);
             // print_r($value);
@@ -59,7 +59,11 @@ class Model
     {
     }
 
-    public function delete($id)
+    public function drop($id)
     {
+        $sql = 'DELETE FROM ' . $this->table . ' WHERE id=' . $id;
+        print_r($sql);
+
+        // return $this->conn->query($sql);
     }
 }

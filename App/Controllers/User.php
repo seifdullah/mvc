@@ -16,10 +16,10 @@ class User extends Controller
     public function index()
     {
         // echo '<pre>';
-        $users = $this->model->retrieve();
-        // print_r($users);
+        $results = $this->model->retrieve();
+        // print_r($results);
 
-        $this->view('user/index', $users);
+        $this->view('user/index', $results);
     }
 
     public function add()
@@ -36,6 +36,7 @@ class User extends Controller
             $data['name'] = filter_var($_POST['name'], FILTER_SANITIZE_STRING);
             $data['address'] = filter_var($_POST['address'], FILTER_SANITIZE_STRING);
             $data['location'] = filter_var($_POST['location'], FILTER_SANITIZE_STRING);
+            $data['did'] = filter_var($_POST['did'], FILTER_SANITIZE_STRING);
         }
 
         // print_r($data);

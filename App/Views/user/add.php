@@ -13,6 +13,10 @@
     <label for="location" class="form-label">Location</label>
     <input type="text" class="form-control" name="location" placeholder="Enter Location">
   </div>
+  <div class="mb-3">
+    <label for="did" class="form-label">Dept_ID</label>
+    <input type="text" class="form-control" name="did" placeholder="Enter Department ID">
+  </div>
   <div class="col-12">
     <button type="submit" name="submit" class="btn btn-primary">Submit</button>
   </div>
