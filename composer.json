@@ -1,0 +1,17 @@
+{
+  "name": "seif/mvc",
+  "description": "An MVC structure for personal study",
+  "keywords": ["php", "framework", "mvc", "oop"],
+  "require": {
+    "ext-json": "*",
+    "ext-pdo": "*",
+    "ext-iconv": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Seif\\": "src/",
+      "App\\": "App/"
+    }
+  }
+}
+
